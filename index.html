@@ -8,19 +8,121 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
     <title>Minion Translator</title>
+    <link rel="shortcut icon"
+          href="Minion.png"
+          type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@500&display=swap');
+
+        :root {
+            --primary-color: yellow;
+            --sec-color: black;
+            --third-color: white;
+        }
+
+        body {
+            font-family: 'Gluten', cursive;
+            font-weight: 500;
+            font-size: larger;
+            margin-top: 0;
+            position: relative;
+            top: 0;
+        }
+
+        nav {
+            height: 10vh;
+            background-color: var(--primary-color);
+            position: relative;
+            top: 0;
+            display: block;
+            text-align: center;
+            border-radius: 0 0 25px 25px;
+
+        }
+
+        #heading {
+            margin-top: 0;
+            vertical-align: middle;
+            margin: 0 auto;
+            align-content: center;
+            padding-top: 1.5rem;
+        }
+
+        #div-output {
+            height: 10%;
+            width: 40vw;
+            border: 2px solid var(--sec-color);
+            padding: 5% 10% 10% 5%;
+            /* margin-left: 20vw;
+            margin-right: 30vw; */
+            margin: 0 auto;
+            box-shadow: 10px 5px 10px var(--primary-color);
+        }
+
+        #btn-translate {
+            padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+            background-color: var(--primary-color);
+            box-shadow: var(--sec-color);
+            margin: 0 auto;
+            display: block;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            font-family: 'Gluten', cursive;
+            font-size: large;
+            box-shadow: 5px 5px 7px var(--sec-color);
+        }
+
+        #btn-translate:hover {
+            background-color: var(--third-color);
+            color: var(--sec-color);
+            box-shadow: 5px 5px 7px var(--primary-color);
+        }
+
+        #txt-input {
+            height: 10%;
+            width: 40vw;
+            border: 2px solid var(--sec-color);
+            padding: 5% 10% 10% 5%;
+            box-shadow: 10px 5px 10px var(--primary-color);
+            display: block;
+            /* margin-left: 20vw;
+            margin-right: 30vw; */
+            margin: 0 auto;
+            margin-top: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+        }
+    </style>
+
 </head>
 
 <body>
 
+    <nav>
+        <h1 id="heading">Minionese Translator</h1>
+    </nav>
 
-    <textarea name="txt-input"
-              id="txt-input"
-              cols="30"
-              rows="10"
-              placeholder="Write here in English."></textarea>
-    <button id="btn-translate">translate</button>
+    <main id="main-container">
+        <textarea name="txt-input"
+                  id="txt-input"
+                  placeholder="Write here in English."></textarea>
+        <button id="btn-translate">Translate to Minionese</button>
 
-    <script src="index.js"></script>
+        <div id="div-output">
+
+        </div>
+
+
+
+        <script src="index.js"></script>
+    </main>
+
+    <footer>
+        <h4>Made by Ganesh Kanchi</h4>
+    </footer>
 </body>
 
 </html>
