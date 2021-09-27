@@ -39,8 +39,6 @@
             width: 40vw;
             border: 2px solid var(--sec-color);
             padding: 5% 5% 7% 5%;
-            /* margin-left: 20vw;
-            margin-right: 30vw; */
             margin: 0 auto;
             box-shadow: 10px 5px 10px var(--primary-color);
         }
@@ -71,8 +69,6 @@
             padding: 5% 5% 5% 5%;
             box-shadow: 10px 5px 10px var(--primary-color);
             display: block;
-            /* margin-left: 20vw;
-            margin-right: 30vw; */
             margin: 0 auto;
             margin-top: 1rem;
         }
